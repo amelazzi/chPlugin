@@ -1,8 +1,8 @@
 {
-	"name": "My Extension",
+	"name": "uSearch Expression",
 	"version": "1.0",
 	"manifest_version": 2,
-	"description": "This is a short description for our Chrome extension.",
+	"description": "Plugin which allows to find in a page a portion of text according to a regular expression",
 	
 	
 	"permissions": [
@@ -11,7 +11,7 @@
 	"content_scripts": [
 	{
 		"matches": ["https://*/*", "http://*/*", "file:///*/*"],
-		"js": ["jquery.js","content.js"],
+		"js": ["content.js"],
 		"run_at": "document_end"
 	}
 	],
@@ -19,13 +19,12 @@
 
 	"background": {
 		"scripts": [
-		  "jquery.js",
 		  "background.js"
 		]
 	  },
 
 	"browser_action": {
-		"default_icon": "icon.png",
+		"default_icon": "iconActive.png",
 		"default_popup": "popup.html",
 		"omnibox": { "keyword" : "yeah" }
 	}

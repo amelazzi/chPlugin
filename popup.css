@@ -3,6 +3,7 @@ body {
     padding: 0px;
     font-family: Arial, Helvetica, Sans-serif;
     font-size: 13px;
+    width: 250px;
 }
 
 .appBar{
@@ -14,13 +15,13 @@ body {
 .appBar p {
     color: white;
     font-size: 10pt;
-    margin-top: 2px;
     padding-top: 6px;
     text-align: center
 }
 
-img{
-    width: 50%;
+#OnOff{
+    width: 100px;
     margin-top: 32px;
-    margin-left: 42px;
+    margin-left: 46px;
+
 }

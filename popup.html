@@ -1,8 +1,7 @@
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="plugin.css">
+		<link rel="stylesheet" type="text/css" href="popup.css">
         <script type="text/javascript" src="popup.js"></script>
-        
 
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
@@ -20,22 +19,17 @@
     
 	<body>
         <div class="appBar">
-            <p> Regular Expression </p>
+            <p> uSearch Expression </p>
         </div>
         <div class="row" style="margin-top: 24px">
-            <div class="col s6 offset-s3">  
+            <div class="col s10 offset-s1">  
                 <div class="input-field">
-                    <input id="regExp" type="text" name="regExp">
-                    <label for="last_name">Expression</label>
+                    <input id="regExp" type="text" name="regExp" placeholder="Expression">
                 </div> 
-                <label>
-                    <input id="send" type="checkbox" class="filled-in" checked="checked" />
-                    <span>Auto run</span>
-                </label>
             </div>
 
-            <div class="col s6 offset-s4">
-                <img src="./powerON.png">   
+            <div class="col s5 offset-s1">
+                <img id="OnOff" src="./powerON.png" />
             </div>
         </div>
 	</body>
